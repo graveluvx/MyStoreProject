@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="https://i.imgur.com/DZiNb8m.png">
+    <script src="https://cdn.sell.app/embed/script.js" type="module"></script>
+    <link href="https://cdn.sell.app/embed/style.css" rel="stylesheet"/>
+    <script src='https://dooovid.github.io/detect-devtools/antidbg.min.js'></script>
+<script
+    src="https://cdn.sell.app/embed/script.js"
+    type="module"
+>
+</script>
+    <meta property="og:title" content="Showcase Cheats™">
+    <meta property="og:description" content="Showcase Cheats™ | Free FiveM External">
+    <meta property="og:image" content="https://i.imgur.com/DZiNb8m.png">
+    <meta property="og:url" content="https://tdcheats.com/fivem">
+    <title>Chowcase Cheats™ | Free FiveM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('assets/images/background2.jpg');
+            background-size: 1920px 1080px;
+            /* Adjust the background size as needed */
+            background-repeat: no-repeat;
+            /* Prevent the background from repeating */
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            /* Align elements vertically */
+            align-items: center;
+        }
+
+        .nav {
+            background-color: #22222200;
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #222;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-top: 20px;
+            /* Add margin to separate from player */
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            display: none;
+        }
+
+        #playerContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: flex-start;
+            /* Align to the top */
+            margin-top: 50px;
+            /* Move down slightly */
+        }
+
+        #player {
+            max-width: 600px;
+            border-radius: 10px;
+            /* Add rounded corners */
+            overflow: hidden;
+            /* Ensure content doesn't overflow rounded corners */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="https://tdcheats.com/" target="_blank">Home</a>
+        <a href="free" target="_blank">Free</a>
+        <a href="webstore" target="_blank">Webstore</a>
+        <a href="https://discord.gg/QCDDKPnx" target="_blank">Discord</a>
+        <a href="https://www.youtube.com/@tdcheats/videos" target="_blank">YouTube</a>
+    </nav>
+
+    <div id="playerContainer">
+        <div id="player"></div>
+    </div>
+
+    <div id="buy_button" class="purchase">
+                    <p id="price" class="price" style="width: 0%;"></p>
+
+                    <div class="2 dg rounded">
+</i>Buy With Paypal</p>
+
+            </div>
+	    </div>
+            <div class="grid xl:grid-cols-5 mx-5 gap-5 mt-3">
+                <button data-sell-store="41633" data-sell-product="213748" data-sell-darkmode="true"  class="1 bg mt-5 text-center py-3 rounded hvr-underline-from-center">
+                    <i class="fa-brands fa-paypal text-2xl textPaypal"></i>
+                    <h1 class="text-stone-400 fntBold tracking-wider">PayPal</h1>
+                </button>
+
+
+<br>
+
+    <div class="alert" id="customAlert">Custom alert box</div>
+
+    <script>
+        // Load YouTube Iframe API asynchronously
+        var tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '360',
+                width: '640',
+                videoId: 'Kv4nAshKmtg', // Replace with your YouTube video ID
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            // You can do something when the player is ready
+        }
+
+        function onPlayerStateChange(event) {
+            // You can do something when player's state changes
+        }
+
+        function download() {
+            // Replace "YOUR_DOWNLOAD_LINK" with your desired download link
+            window.location.href = "https://www.speedtestx.de/testfiles/data_1mb.test";
+        }
+
+        function showAlert(message) {
+            var alertBox = document.getElementById("customAlert");
+            alertBox.innerText = message;
+            alertBox.style.display = "block";
+            setTimeout(function() {
+                alertBox.style.display = "none";
+            }, 3000); // Hide after 3 seconds
+        }
+    </script>
+
+</body>
+
+</html>
